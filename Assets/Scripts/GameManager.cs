@@ -23,15 +23,21 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        gameTimer = preparationTime;
+    }
+
     private void Update()
     {
         switch (gameState)
         {
             case GameState.PREPARATION:
-                gameTimer += Time.deltaTime;
-                if (gameTimer >= preparationTime)
+                gameTimer -= Time.deltaTime;
+                UIManager.instance.SetTimer(gameTimer);
+                if (gameTimer < 0)
                 {
-                    gameTimer = 0;
+                    gameTimer = preparationTime;
                     gameState = GameState.RUNNING;
                 }
                 break;
