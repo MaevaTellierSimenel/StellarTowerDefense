@@ -94,11 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046528370679881378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d21efcb03365aaa4ab5fa6fcd13bf08f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d82e4b8f015ad1409013275df5ed8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraSpeed: 8
-  _borderSize: 10
 --- !u!114 &2046528370679881381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +106,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046528370679881378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975cfb23bbcf114ab0bebd06e958dcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a859c9716bf2ac43a94e838ffd34d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraSpeed: 2
+  _borderSize: 10
